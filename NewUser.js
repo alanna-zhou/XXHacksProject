@@ -11,10 +11,19 @@ var marissa_mayer = {"username":"marissa_mayer","gender":"female","salary":36000
 var mark_zuckerberg = {"username":"mark_zuckerberg","gender":"male","salary":1, "details":"CEO and Co-Founder at Facebook. Computer Programmer, Internet Entrepreneur."};
 
 //existing array of occupations and members
-var users = [bill_gates, mark_zuckerberg]
+var users = [bill_gates, marissa_mayer, mark_zuckerberg]
 
-function newUser(username, gender, salary, details){
-  var user = {"username":username,"gender":gender,"salary":salary,"details":details};
+function newUser(){
+  username = document.getElementById("username");
+  var isFemale = document.getElementById("optionFemale");
+  if (isFemale == true){
+    gender = "female";
+  }else{
+    gender="male";
+  }
+  salary = document.getElementById("salary");
+  //details = document.getElementById("");
+  var user = {"username":username,"gender":gender,"salary":salary}; //,"details":details
   addUser(user);
 }
 
