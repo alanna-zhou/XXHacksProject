@@ -15,6 +15,7 @@ var mark_zuckerberg = {"username":"mark_zuckerberg","gender":"male","salary":1, 
 var users = [bill_gates, marissa_mayer, mark_zuckerberg];
 
 function newUser(){
+  window.alert("starting newUser");
   myUsername = document.getElementById("username").value;
   mySalary = document.getElementById("salary").value;
   // validateField(myUsername);
@@ -23,7 +24,7 @@ function newUser(){
   // if (validateField(myUsername) == true || validateField(mySalary) == true) {
   var user = {"username":myUsername,"gender":myGender,"salary":mySalary}; //,"details":details
   addUser(user);
-  window.alert(user.username);
+
 
   // var isFemale = document.getElementById("optionFemale").value;
   // if (isFemale == true){
@@ -44,6 +45,7 @@ function newUser(){
 
 function addUser(user){
   //find index
+  window.alert("starting addUser");
   for (i=0; i<users.length; i++){
     if (indexFound==false){
       if (users[i].salary>user.salary){
@@ -58,4 +60,13 @@ function addUser(user){
   }
   //add user to user array
   users.splice(index,0,user);
+  sendAlert();
+}
+
+function sendAlert(){
+  var string = "";
+  for (i=0;i<users.length;i++){
+    string+=users[i].username+" - ";
+  }
+  window.alert(string);
 }
