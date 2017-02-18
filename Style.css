@@ -1,26 +1,26 @@
 body {
 	/*background-color: #008080;*/
 	border: 10px solid white;
-	padding-top: 15px;
+	padding-top: 100px;
 	padding-right: 30px;
 	padding-left: 60px;
 	padding-bottom: 80px;
 	background: green;
-    -webkit-animation: mymove 10s infinite; /* Chrome, Safari, Opera */
-    animation: mymove 10s infinite;
+    /*-webkit-animation: mymove 30s infinite; /* Chrome, Safari, Opera */
+    /*animation: mymove 10s infinite;*/
 	font-family: 'Trebuchet MS', Helvetica, sans-serif;
 	color: white;
 }
 
 /* Chrome, Safari, Opera */
-@-webkit-keyframes mymove {
+/*@-webkit-keyframes mymove {
     50% {background-color: orange;}
-}
+}*/
 
 /* Standard syntax */
-@keyframes mymove {
+/*@keyframes mymove {
     50% {background-color: orange;}
-}
+}*/
 
 .button {
     background-color: #ff00ff; /* Green */
