@@ -22,6 +22,7 @@ body {
     50% {background-color: orange;}
 }*/
 
+
 .button {
     background-color: #ff00ff; /* Green */
     border: none;
@@ -34,6 +35,7 @@ body {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 50%;
+    min-width: 250px
 }
 
 img {
