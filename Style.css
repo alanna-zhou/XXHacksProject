@@ -22,7 +22,9 @@ body {
     50% {background-color: orange;}
 }*/
 
-
+.wrapper {
+	text-align:center;
+}
 .button {
     background-color: #ff00ff; /* Green */
     border: none;
