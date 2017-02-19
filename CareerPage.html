@@ -1,6 +1,6 @@
 <!--3rd page-->
 
-<link rel="stylesheet" href ="Style.css">
+<link rel="stylesheet" href ="TimelineStyle.css">
 <!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
@@ -22,8 +22,103 @@
 <body>
   <h1>Your Job Statistics: </h1>
 </body>
-<script>
-	window.alert(users[3].username);
-</script>
+<div class="container">
+    <div class="col-md-6">
+            <!-- <h1 id="timeline">Timeline</h1> -->
+        <ul class="timeline">
+            <li class="timeline">
+                <div class="timeline-badge info"><i class="fa fa-envelope-o"></i></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">
+													<script>
+													document.write(users[0].username)
+													</script>
+												</h4>
+                        <p><small class="text-muted"><i class="fa fa-clock-o"></i>
+													<script>
+													document.write(users[0].gender)
+													</script>
+												</small></p>
+                    </div>
+                    <div class="timeline-body">
+											<script>
+											document.write(users[0].salary)
+											</script>
+                    </div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-badge warning"><i class="fa fa-envelope-o"></i></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">
+													<script>
+													document.write(users[1].username)
+													</script>
+												</h4>
+												<p><small class="text-muted"><i class="fa fa-clock-o"></i>
+													<script>
+													document.write(users[1].gender)
+													</script>
+												</small></p>
+                    </div>
+                    <div class="timeline-body">
+											<script>
+											document.write(users[1].salary)
+											</script>
+                    </div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-badge warning"><i class="fa fa-crosshairs"></i></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">
+													<script>
+													document.write(users[2].username)
+													</script>
+												</h4>
+												<p><small class="text-muted"><i class="fa fa-clock-o"></i>
+													<script>
+													document.write(users[2].gender)
+													</script>
+												</small></p>
+                    </div>
+                    <div class="timeline-body">
+                        <p>
+													<script>
+													document.write(users[2].salary)
+													</script>
+												</p>
+                    </div>
+                </div>
+            </li>
+            <li class="timeline">
+                <div class="timeline-badge info"><i class="fa fa-thumbs-o-down"></i></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">
+													<script>
+													document.write(users[3].username)
+													</script>
+												</h4>
+												<p><small class="text-muted"><i class="fa fa-clock-o"></i>
+													<script>
+													document.write(users[3].gender)
+													</script>
+												</small></p>
+                    </div>
+                    <div class="timeline-body">
+											<script>
+											document.write(users[3].salary)
+											</script>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
 
 </html>
