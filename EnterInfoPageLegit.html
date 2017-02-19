@@ -1,0 +1,75 @@
+<!--2nd page-->
+
+<link rel="stylesheet" href ="TimelineStyle.css">
+<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script src="NewUser.js"></script>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Enter Info Page</title>
+</head>
+<body>
+  <h1>Enter Your Information:</h1>
+  <br></br>
+</body>
+  <form>
+    <div class="form-group">
+      <legend>Username</legend>
+      <input type="username" class="form-control" id="username" placeholder="Username">
+    </div>
+    <div class="form-group">
+      <legend>Job</legend>
+      <select class="form-control" id="scrollSelect">
+        <option>Tech CEO</option>
+      </select>
+    </div>
+		<div class="form-group">
+			<legend>Salary</legend>
+			<input type="username" class="form-control" id="salary" placeholder="Salary">
+		</div>
+    <fieldset class="form-group">
+      <legend>You Identify as a:</legend>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+          Female
+        </label>
+      </div>
+      <div class="form-check">
+      <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+          Male
+        </label>
+      </div>
+    </fieldset>
+  </form>
+  <div class="wrapper">
+    <br></br>
+    <button type="submit" onclick="newUser()" class="btn btn-primary">Submit</button>
+	</div>
+	<!-- <button onclick="window.location='CareerPageLegit.html'" type="button" class="btn btn-secondary btn-lg">Get Started</button> -->
+	<div class="container">
+	    <div class="col-md-6">
+	        <ul class="timeline">
+						<script>
+						document.write(pleaseWork())
+						</script>
+
+	        </ul>
+	    </div>
+	</div>
+
+
+
+</html>
