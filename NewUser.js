@@ -49,7 +49,11 @@ function addUser(user){
   //window.alert("starting addUser");
   for (i=0; i<users.length; i++){
     if (indexFound==false){
-      if (users[i].salary>user.salary && users[i+1].salary<user.salary){
+      if (user.salary>users[i].salary){
+        index=i;
+        indexFound=true;
+      }
+      else if (users[i].salary>user.salary && users[i+1].salary<user.salary){
         index=i+1;
         indexFound=true;
       }
