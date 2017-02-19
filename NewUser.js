@@ -75,3 +75,34 @@ function sendAlert(){
   }
   window.alert(string);
 }
+
+function toHTML(i){
+  var string ="";
+  string+="<h1>"+users[i].username
+  +"</h1><h2>Salary: $"+users[i].salary
+  +"</h2><h3>Gender: "+users[i].gender
+  +"</h3><h4>More Details: "+users[i].details+"</h4>";
+  return string;
+
+}
+
+function pleaseWork(){
+      var string ="";
+  for (i=0; i<users.length; i++){
+
+    string+='<li class="timeline">'+
+    '<div class="timeline-badge info"><i class="fa fa-envelope-o"></i></div>'+
+        '<div class="timeline-panel">'+
+            '<div class="timeline-heading">'+
+                '<h4 class="timeline-title">'+
+                  '<script>'+
+                  'document.write(toHTML('+i+'))'+
+                  '</script>'+
+                '</h4>'+
+
+            '</div>'+
+        '</div>'+
+    '</li>'
+  }
+  return string;
+}
