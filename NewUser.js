@@ -4,7 +4,7 @@ var myCareer;
 var mySalary;
 var myGender;
 var index;
-var indexFound=false;
+var indexFound;
 
 //default users
 var bill_gates = {"username":"bill_gates","gender":"male","salary":11500000000, "details":"Co-Founder at Microsoft"};
@@ -15,7 +15,8 @@ var mark_zuckerberg = {"username":"mark_zuckerberg","gender":"male","salary":1, 
 var users = [bill_gates, marissa_mayer, mark_zuckerberg];
 
 function newUser(){
-  window.alert("starting newUser");
+  //window.alert("starting newUser");
+  indexFound=false;
   myUsername = document.getElementById("username").value;
   mySalary = document.getElementById("salary").value;
   // validateField(myUsername);
@@ -45,10 +46,10 @@ function newUser(){
 
 function addUser(user){
   //find index
-  window.alert("starting addUser");
+  //window.alert("starting addUser");
   for (i=0; i<users.length; i++){
     if (indexFound==false){
-      if (users[i].salary>user.salary){
+      if (users[i].salary>user.salary && users[i+1].salary<user.salary){
         index=i+1;
         indexFound=true;
       }
